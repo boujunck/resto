@@ -18,6 +18,14 @@ function sederhana_resto_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function sederhana_resto_node_info() {
   $items = array(
+    'alamat' => array(
+      'name' => t('Alamat'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Alamat'),
+      'help' => '',
+    ),
     'data_pribadi' => array(
       'name' => t('Data Pribadi'),
       'base' => 'node_content',

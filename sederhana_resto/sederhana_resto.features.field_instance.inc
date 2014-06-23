@@ -10,6 +10,165 @@
 function sederhana_resto_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-alamat-field_kecamatan'
+  $field_instances['node-alamat-field_kecamatan'] = array(
+    'bundle' => 'alamat',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_kecamatan',
+    'label' => 'Kecamatan',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -1,
+    ),
+  );
+
+  // Exported field_instance: 'node-alamat-field_kelurahan'
+  $field_instances['node-alamat-field_kelurahan'] = array(
+    'bundle' => 'alamat',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_kelurahan',
+    'label' => 'Kelurahan',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 40,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -2,
+    ),
+  );
+
+  // Exported field_instance: 'node-alamat-field_rt'
+  $field_instances['node-alamat-field_rt'] = array(
+    'bundle' => 'alamat',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_rt',
+    'label' => 'RT',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 10,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-alamat-field_rw'
+  $field_instances['node-alamat-field_rw'] = array(
+    'bundle' => 'alamat',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_rw',
+    'label' => 'RW',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 10,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -3,
+    ),
+  );
+
   // Exported field_instance: 'node-data_pribadi-field_agama'
   $field_instances['node-data_pribadi-field_agama'] = array(
     'bundle' => 'data_pribadi',
@@ -480,6 +639,145 @@ function sederhana_resto_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-karyawan-field_alamat_ktp'
+  $field_instances['node-karyawan-field_alamat_ktp'] = array(
+    'bundle' => 'karyawan',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_alamat_ktp',
+    'label' => 'Alamat KTP',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'inline_entity_form',
+      'settings' => array(
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_existing' => FALSE,
+          'delete_references' => 0,
+          'label_plural' => 'nodes',
+          'label_singular' => 'node',
+          'match_operator' => 'CONTAINS',
+          'override_labels' => 0,
+        ),
+      ),
+      'type' => 'inline_entity_form_single',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-karyawan-field_alamat_sama'
+  $field_instances['node-karyawan-field_alamat_sama'] = array(
+    'bundle' => 'karyawan',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_alamat_sama',
+    'label' => 'Alamat Sekarang Sama dengan KTP',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-karyawan-field_alamat_sekarang'
+  $field_instances['node-karyawan-field_alamat_sekarang'] = array(
+    'bundle' => 'karyawan',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_alamat_sekarang',
+    'label' => 'Alamat Sekarang',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'inline_entity_form',
+      'settings' => array(
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_existing' => FALSE,
+          'delete_references' => 0,
+          'label_plural' => 'nodes',
+          'label_singular' => 'node',
+          'match_operator' => 'CONTAINS',
+          'override_labels' => 0,
+        ),
+      ),
+      'type' => 'inline_entity_form_single',
+      'weight' => 14,
+    ),
+  );
+
   // Exported field_instance: 'node-karyawan-field_cabang'
   $field_instances['node-karyawan-field_cabang'] = array(
     'bundle' => 'karyawan',
@@ -926,6 +1224,9 @@ function sederhana_resto_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Agama');
   t('Akhir Percobaan');
+  t('Alamat KTP');
+  t('Alamat Sekarang');
+  t('Alamat Sekarang Sama dengan KTP');
   t('Bank Karyawan');
   t('Cabang');
   t('Data Diri');
@@ -934,10 +1235,14 @@ function sederhana_resto_field_default_field_instances() {
   t('Divisi');
   t('Jabatan');
   t('Jenis Kelamin');
+  t('Kecamatan');
+  t('Kelurahan');
   t('NPWP');
   t('Nama KTP');
   t('Nama Panggilan');
   t('No Rekening');
+  t('RT');
+  t('RW');
   t('Status');
   t('Status Kawin');
   t('Tanggal Berhenti');
